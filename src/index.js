@@ -259,7 +259,7 @@ export default class extends PureComponent {
 
     // Ensure the initial down position gets added to our line
     this.isPressing = true;
-    this.handlePointerMove(e);
+    this.handlePointerMove(x, y);
 
     this.lazy.update({ x, y }, { both: true });
     this.handleMouseDown(e);
